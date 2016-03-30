@@ -26,3 +26,9 @@ $("input[type='text']").on('keypress', function(event) {
 		$("ul").append("<li><span><i class='fa fa-trash'></i></span> "+ toDoText + "</li>");
 	}
 });
+
+// add the click listener on the + icon
+$('.fa-plus').click(function(){
+	// toggle the input box
+	$("input[type='text']").toggle();
+});
